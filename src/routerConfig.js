@@ -8,6 +8,7 @@ import { asideMenuConfig } from './menuConfig';
 import UserLogin from './pages/UserLogin';
 import UserRegister from './pages/UserRegister';
 
+import Technology from './pages/Technology';
 import Dashboard from './pages/Dashboard';
 
 const routerConfig = [
@@ -15,7 +16,6 @@ const routerConfig = [
     path: '/dashboard/monitor',
     component: Dashboard,
   },
-
   {
     path: '/user/login',
     component: UserLogin,
@@ -23,6 +23,10 @@ const routerConfig = [
   {
     path: '/user/register',
     component: UserRegister,
+  },
+  {
+    path: '/technology',
+    component: Technology,
   },
 ];
 

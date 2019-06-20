@@ -130,6 +130,11 @@ const asideMenuConfig = [
       },
     ],
   },
+  {
+    name: '\u6280\u672F\u7BC7',
+    path: '/technology',
+    icon: 'home',
+  },
 ];
 
 export { headerMenuConfig, asideMenuConfig };
