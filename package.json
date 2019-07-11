@@ -1,62 +1,57 @@
 {
-  "name": "@icedesign/custom-react-template",
-  "version": "1.0.0",
-  "description": "custom react template",
+  "name": "@icedesign/lite-scaffold",
+  "version": "2.0.10",
+  "description": "该模板适用于从 0 到 1 开始搭建项目，内置基础的页面，路由和菜单展示",
   "dependencies": {
     "@alifd/next": "^1.x",
+    "@ice/store": "^0.1.1",
     "@icedesign/container": "^1.x",
-    "@icedesign/form-binder": "^1.x",
-    "@icedesign/foundation-symbol": "^1.x",
     "@icedesign/img": "^1.x",
     "@icedesign/layout": "^1.x",
-    "@icedesign/theme": "^0.1.4",
+    "@icedesign/theme": "^1.0.0",
     "axios": "^0.17.1",
     "classnames": "^2.2.5",
     "enquire-js": "^0.1.2",
-    "history": "^4.7.2",
-    "hoist-non-react-statics": "^2.5.5",
-    "ice-migrate": "^1.0.6",
-    "invariant": "^2.2.4",
-    "lodash": "^4.17.10",
-    "path-to-regexp": "^2.2.1",
+    "prop-types": "^15.5.8",
     "react": "^16.4.1",
-    "react-document-title": "^2.0.3",
     "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "5.0.0-alpha.6",
-    "redux": "3.6.0",
-    "redux-thunk": "^2.3.0"
+    "react-intl": "^2.9.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.3",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "eslint": "^4.13.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1",
-    "ice-scripts": "^1.6.0",
-    "node-sass": "^4.12.0"
+    "@ice/spec": "^0.1.1",
+    "eslint": "^6.0.1",
+    "stylelint": "^10.1.0",
+    "ice-scripts": "^2.0.0",
+    "ice-plugin-fusion": "^0.1.4",
+    "ice-plugin-moment-locales": "^0.1.0"
   },
   "scripts": {
-    "start": "ice dev",
-    "build": "ice build",
-    "lint": "eslint . --ext '.js,.jsx' --fix"
+    "start": "ice-scripts dev",
+    "build": "ice-scripts build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss"
   },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.com",
-    "access": "public"
+  "scaffoldConfig": {
+    "builder": "ice-scripts",
+    "name": "ice-design-lite",
+    "title": "ICE Design Lite",
+    "categories": [
+      "基础模板"
+    ],
+    "screenshot": "https://img.alicdn.com/tfs/TB1CjPVw4naK1RjSZFBXXcW7VXa-2872-1580.png"
   },
-  "buildConfig": {
-    "theme": "@icedesign/skin",
-    "entry": "src/index.js",
-    "localization": false
+  "engines": {
+    "node": ">=8.0.0"
   },
-  "themeConfig": {
-    "theme": "dark",
-    "primaryColor": "#0077FF",
-    "secondaryColor": "#0073DC"
-  }
+  "iceworks": {
+    "type": "react",
+    "adapter": "adapter-react-v2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-lab/react-materials/tree/master/scaffolds/ice-design-lite"
+  },
+  "title": "队长信息"
 }

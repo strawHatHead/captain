@@ -1,35 +1,28 @@
-// 以下文件格式为描述路由的协议格式
-// 你可以调整 routerConfig 里的内容
-// 变量名 routerConfig 为 iceworks 检测关键字，请不要修改名称
+import React from 'react';
 
-import { getRouterData } from './utils/formatter';
-import { asideMenuConfig } from './menuConfig';
+import BasicLayout from '@/layouts/BasicLayout';
 
-import UserLogin from './pages/UserLogin';
-import UserRegister from './pages/UserRegister';
-
-import Technology from './pages/Technology';
-import Dashboard from './pages/Dashboard';
+const Dashboard = React.lazy(() =>import('@/pages/Dashboard'));
+const NotFound = React.lazy(() =>import('@/pages/NotFound'));
 
 const routerConfig = [
   {
-    path: '/dashboard/monitor',
-    component: Dashboard,
-  },
-  {
-    path: '/user/login',
-    component: UserLogin,
-  },
-  {
-    path: '/user/register',
-    component: UserRegister,
-  },
-  {
-    path: '/technology',
-    component: Technology,
+    path: '/',
+    component: BasicLayout,
+    children: [
+      {
+        path: '/dashboard',
+        component: Dashboard,
+      },
+      {
+        path: '/',
+        redirect: '/dashboard',
+      },
+      {
+        component: NotFound,
+      },
+    ],
   },
 ];
 
-const routerData = getRouterData(routerConfig, asideMenuConfig);
-
-export { routerData };
+export default routerConfig;
