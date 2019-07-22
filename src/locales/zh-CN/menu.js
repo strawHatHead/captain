@@ -1,15 +1,7 @@
 export default {
   // Aside Menu
-  'app.menu.dashboard': 'Dashboard',
-  'app.menu.dashboard.monitor': '监控页',
-
-  'app.menu.chart': '图表页',
-  'app.menu.chart.basic': '基础图表',
-  'app.menu.chart.general': '通用图表',
-
-  'app.menu.table': '表格页',
-  'app.menu.table.basic': '基础表格',
-  'app.menu.table.general': '通用表格',
+  'app.menu.base': '基础知识',
+  'app.menu.network': '网络',
 
   // Top Header
   'app.header.feedback': '反馈',

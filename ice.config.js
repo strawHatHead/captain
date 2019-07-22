@@ -16,6 +16,7 @@ module.exports = {
   ],
   alias: {
     '@': path.resolve(__dirname, './src/'),
+    '@p': path.resolve(__dirname, './public/'),
   },
   // 3. 自定义 webpack 配置
   // chainWebpack: (config) => {

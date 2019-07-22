@@ -31,7 +31,7 @@ export default function Header(props) {
       className={`${styles.iceDesignLayoutHeader} ${className}`}
       style={{ ...style }}
     >
-      <Logo />
+      <Logo className={styles.Logo} />
 
       <div className={styles.iceDesignLayoutHeaderMenu}>
         {/* Header 菜单项 begin */}

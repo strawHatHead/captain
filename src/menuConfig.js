@@ -21,46 +21,45 @@ const headerMenuConfig = [
 
 const asideMenuConfig = [
   {
-    name: 'Dashboard',
-    path: '/dashboard',
-    icon: 'atm',
-    children: [
-      {
-        name: '监控页',
-        path: '/dashboard/monitor',
-      },
-    ],
+    name: '基础知识',
+    path: '/base',
+    icon: 'atm'
   },
   {
-    name: '图表页',
-    path: '/chart',
-    icon: 'picture',
-    children: [
-      {
-        name: '基础图表',
-        path: '/chart/basic',
-      },
-      {
-        name: '通用图表',
-        path: '/chart/general',
-      },
-    ],
+    name: '网络',
+    path: '/network',
+    icon: 'atm'
   },
-  {
-    name: '表格页',
-    path: '/table',
-    icon: 'calendar',
-    children: [
-      {
-        name: '基础表格',
-        path: '/table/basic',
-      },
-      {
-        name: '通用表格',
-        path: '/table/general',
-      },
-    ],
-  },
+  // {
+  //   name: '图表页',
+  //   path: '/chart',
+  //   icon: 'picture',
+  //   children: [
+  //     {
+  //       name: '基础图表',
+  //       path: '/chart/basic',
+  //     },
+  //     {
+  //       name: '通用图表',
+  //       path: '/chart/general',
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: '表格页',
+  //   path: '/table',
+  //   icon: 'calendar',
+  //   children: [
+  //     {
+  //       name: '基础表格',
+  //       path: '/table/basic',
+  //     },
+  //     {
+  //       name: '通用表格',
+  //       path: '/table/general',
+  //     },
+  //   ],
+  // },
 ];
 
 export { headerMenuConfig, asideMenuConfig };

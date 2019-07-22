@@ -2,7 +2,8 @@ import React from 'react';
 
 import BasicLayout from '@/layouts/BasicLayout';
 
-const Dashboard = React.lazy(() =>import('@/pages/Dashboard'));
+const Base = React.lazy(() =>import('@/pages/Base'));
+const Network = React.lazy(() =>import('@/pages/Network'));
 const NotFound = React.lazy(() =>import('@/pages/NotFound'));
 
 const routerConfig = [
@@ -11,12 +12,12 @@ const routerConfig = [
     component: BasicLayout,
     children: [
       {
-        path: '/dashboard',
-        component: Dashboard,
+        path: '/base',
+        component: Base,
       },
       {
-        path: '/',
-        redirect: '/dashboard',
+        path: '/network',
+        component:  Network,
       },
       {
         component: NotFound,

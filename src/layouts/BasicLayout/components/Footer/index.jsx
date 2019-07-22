@@ -9,7 +9,7 @@ export default function Footer() {
     <Layout.Footer className={styles.footer} type={null}>
       <div className={styles.body}>
         <div className={styles.logo}>
-          <Logo />
+          <Logo className={styles.logo_set} />
         </div>
         <div className={styles.copyright}>
           © 2018 Theme designed by{' '}
