@@ -2,26 +2,17 @@
 
 # dependencies
 /node_modules
-# roadhog-api-doc ignore
-/src/utils/request-temp.js
-_roadhog-api-doc
+/npm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
 
 # production
 /dist
-/.vscode
 
-/public/lib/vendors.all.js
 # misc
 .DS_Store
-npm-debug.log*
-yarn-error.log
 
-/coverage
-.idea
-yarn.lock
-package-lock.json
-*bak
-
-# visual studio code
-.history
-/manifest.json
+# umi
+.umi
+.umi-production
